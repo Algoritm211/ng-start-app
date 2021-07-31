@@ -2,7 +2,7 @@
   <h1>New component</h1>
 
   <div>
-    <app-card *ngFor="let card of cards" [card]="card">
+    <app-card *ngFor="let card of cards$ | async" [card]="card">
     </app-card>
   </div>
 </div>
